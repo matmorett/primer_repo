@@ -1,0 +1,323 @@
+/**Home**/
+
+
+.header__navbar{
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+
+.header__nav-item{
+
+    padding-right: 20px;
+
+}
+
+
+.main {
+    background-image: url("../Imagenes/surfing-926822_1920.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+
+
+
+.main__flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 180px;
+}
+    
+    
+.main__titulo {
+        font-family: 'poppins', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 2px;
+        color:black;
+        animation-duration: 6s;
+        animation-name: aparecer2;
+}
+    
+    
+    
+    
+.main__subtitulo {
+        font-family: 'poppins',sans-serif;
+        text-align: center;
+        font-weight: normal;
+        font-size: 20px;
+        color: white;
+        animation-duration: 8s;
+        animation-name: aparecer2;
+}
+    
+    
+@keyframes aparecer2 {
+        0% {
+            opacity: 0;
+        }
+        
+        50% {
+            opacity: 0,5;
+        }
+        100% {
+            opacity: 1;
+        }
+}
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**Productos**/
+
+
+
+
+.fondo{
+    background-image: linear-gradient(to top, #032F40, #BEBFBD, #032F40);
+}
+
+.productos__titulo {
+    
+    font-weight: bold;
+    margin-bottom: 80px;
+    font-size: 50px;
+}
+
+.productos__subtitulo {
+    text-align: center;
+    font-weight: normal;
+    color: white;
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.proceso {
+  font-family: 'poppins' sans-serif;
+    margin-top: 150px;
+}
+
+.proceso__titulo {
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**Planet Friendly**/
+
+.planet{
+    margin-top: 100px;
+}
+
+
+.planet__titulo{
+    margin-bottom: 80px;
+    font-weight: bold;
+    font-family: 'poppins' , sans-serif;
+  }
+
+
+  .planet__img {
+      background-image: url("./Imagenes/PLANET.png");
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+
+
+.planet__parrafo{
+        -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+                animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+ @-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+
+  .planet__bosques {
+    -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+            animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+
+@-webkit-keyframes text-focus-in {
+0% {
+  -webkit-filter: blur(12px);
+          filter: blur(12px);
+  opacity: 0;
+}
+100% {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  opacity: 1;
+}
+}
+@keyframes text-focus-in {
+0% {
+  -webkit-filter: blur(12px);
+          filter: blur(12px);
+  opacity: 0;
+}
+100% {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  opacity: 1;
+}
+}
+
+
+.testimonios {
+    font-family: 'poppins' , sans-serif;
+    font-size: 20px;
+    background-color: #4F8C7B;
+}
+
+
+.testimonios__titulo {
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+
+
+
+.testimonios__parrafo {
+    color: white;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+/**historia**/
+
+
+.historia{
+  background-color: #A3BFAF;
+  color: black;
+}
+
+
+.historia__titulo{
+  font-weight: bold;
+  font-family: 'poppins', sans-serif;
+  margin-bottom: 80px;
+}
+
+
+
+
+/**Contactanos**/
+ 
+
+.contacto__titulo {
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.contacto__form { 
+    color: black;
+    font-family: 'poppins' , sans-serif;
+}
+
+
+
+
+
+
+
+/**Footer**/
+
+
+footer {
+    font-family: 'poppins' , sans-serif;
+}
+
+.footer__h6 {
+  font-size: 24px;
+  padding-top: 20px;
+  color: white;
+}
+
+.footer__hr {
+  color: white;
+}
+
+.footer__parrafo{
+  color: white;
+  font-size: 14px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+
+
+
+

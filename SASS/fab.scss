@@ -1,0 +1,27 @@
+@import "../bootstrap-5.0.2/scss/functions";
+@import "../bootstrap-5.0.2/scss/variables";
+
+
+.fab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    overflow: hidden;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+
+@each $name, $color in $colors {
+    .fab-#{$name} {
+        background-color: $color;
+    }
+}

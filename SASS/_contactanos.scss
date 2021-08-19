@@ -1,0 +1,27 @@
+@import "./variables";
+
+.contacto{
+    background-color:#6B98BF;
+    padding-top: 80px;
+    &__titulo {
+        color: $colorblanco;
+        font-size: $titulo;
+        font-family: 'poppins', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    &__form { 
+        color: $colorblanco;
+        font-family: 'poppins' , sans-serif;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact {
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+}
+

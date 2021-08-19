@@ -1,0 +1,54 @@
+@import "./variables";
+@import "./home";
+@import "./productos";
+@import "./planet";
+@import "./historia";
+@import "./contactanos";
+
+
+
+
+
+
+.header {
+    
+    &__navbar{
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    }
+    &__nav-item{
+    padding-right: 20px;
+    }
+}
+
+
+
+
+.footer {
+    font-family: 'poppins' , sans-serif;
+    &__h6 {
+        font-size: 24px;
+        padding-top: 20px;
+        color: white;
+      }
+    &__hr {
+        color: white;
+      }
+    &__parrafo{
+        color: white;
+        font-size: 14px;
+      }
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+

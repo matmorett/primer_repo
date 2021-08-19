@@ -1,0 +1,62 @@
+@import "./variables";
+
+.main{
+    background-image: url("../Imagenes/surfing-926822_1920.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    &__flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 180px;
+    }
+    &__titulo {
+        font-family: 'poppins', sans-serif;
+        font-weight: bold;
+        font-size: $titulo;
+        letter-spacing: 2px;
+        color:$colorNegro;
+        animation-duration: 6s;
+        animation-name: aparecer2;
+    }
+    &__subtitulo {
+        font-family: 'poppins',sans-serif;
+        text-align: center;
+        font-weight: normal;
+        font-size: $titulo/2;
+        color: $colorblanco;
+        animation-duration: 8s;
+        animation-name: aparecer2;
+    }
+
+}
+
+
+    
+    
+@keyframes aparecer2 {
+        0% {
+            opacity: 0;
+        }
+        
+        50% {
+            opacity: 0,5;
+        }
+        100% {
+            opacity: 1;
+        }
+}
+  
+
+
+@media (max-width: 576px) {
+    .main__titulo {
+      font-size: 22px;
+    }
+    .main__subtitulo {
+        font-size: 12px;
+    }
+   
+}

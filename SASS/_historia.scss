@@ -1,0 +1,23 @@
+@import "./variables";
+
+
+
+.historia{
+    background-color: #6B98BF;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &__titulo{
+      color: $colorblanco;
+        font-weight: bold;
+        font-size: $titulo;
+        font-family: 'poppins', sans-serif;
+      }
+    &__parrafo{
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-align: left;
+        color: $colorblanco;
+    }
+  }
+  
+  
