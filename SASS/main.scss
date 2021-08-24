@@ -11,7 +11,6 @@
 
 
 .header {
-    
     &__navbar{
     font-family: 'poppins', sans-serif;
     font-size: 18px;
@@ -25,27 +24,46 @@
 
 
 
-.footer {
-    font-family: 'poppins' , sans-serif;
-    &__h6 {
-        font-size: 24px;
-        padding-top: 20px;
-        color: white;
-      }
-    &__hr {
-        color: white;
-      }
-    &__parrafo{
-        color: white;
-        font-size: 14px;
-      }
+/**FOOTER**/
+
+
+.footer{
+  font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: center;
+  &__parrafo{
+  font-size: 14px;
+  font-style: lighter;
+  padding: 0;
+  margin: 0 0 20px 0;
+  }
 }
 
-.footer a {
+
+.footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+.footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #1B5773;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  background: #0678e3;
+  color: #fff;
   text-decoration: none;
 }
-
-
 
 
 

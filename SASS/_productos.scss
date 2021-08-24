@@ -2,7 +2,7 @@
 
 
 .fondo{
-    background-color: #6B98BF;
+    background-color: #1B5773;
 }
 
 
@@ -14,20 +14,12 @@
     font-size: $titulo;
     margin-bottom: 80px;
     }
-    &__subtitulo {
-
-        text-align: center;
-        font-weight: normal;
-        color:$colorNegro;
-        font-weight: bold;
-        margin-top: 80px;
-        margin-bottom: 40px;
-    }
 }
 
 
 .proceso{
-    margin-top: 150px; 
+    margin-top: 150px;
+    padding-bottom: 100px;
     &__titulo {
     font-size: $titulo;
     font-family: 'poppins' sans-serif;
@@ -74,16 +66,62 @@
 
 
 
-  @media (max-width: 768px) {
-    .media {
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-    }
-    .productos__titulo{
-      text-align: center;
-    }
-    .productos__subtitulo{
-      text-align: center;
-    }
+  .galeria {
+    display: flex;
+    flex-direction: column;
+    &__row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
+    
+}
+
+
+
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+}
+
+.galeria__card {
+  margin: 2%;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+.galeria__row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2%;
+}
+}
+
+@media (min-width: 992px){
+.galeria {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.galeria {
+    margin-top: 5%;
+    text-align: center;
+}
+}

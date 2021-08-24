@@ -3,9 +3,8 @@
 
 
 .historia{
-    background-color: #6B98BF;
+    background-color: #1B5773;
     padding-top: 80px;
-    padding-bottom: 80px;
     &__titulo{
       color: $colorblanco;
         font-weight: bold;
@@ -19,5 +18,22 @@
         color: $colorblanco;
     }
   }
+
+.videos {
+  background-color: #1B5773;
+  padding-bottom: 80px;
+  &__titulo{
+    font-weight: 400;
+    padding-bottom: 40px;
+  }
+}
+
+
+
   
-  
+ 
+
+
+
+
+
