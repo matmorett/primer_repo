@@ -1,97 +1,98 @@
-@import "./variables";
+@import url("./_variables.scss");
 
 
-.fondo{
-    background-color: #1B5773;
+
+
+
+
+
+/**HOME MASTER**/
+
+.absolute-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+  height: 100%;
+  width: 100%;
+
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
+
+
+.home-mast {
+  height: 50vh;
+
+  &__container {
+    display: flex;
+    height: 100%;
+
+    & > * {
+      position: relative;
+      flex-grow: 1;
+      padding: 1em;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .productos{
+    background-color: $colorFondo;
+    font-family: 'Montserrat', sans-serif;
     padding-top: 80px;
+    padding-bottom: 80px;
     &__titulo {
-    color: $colorblanco;
+    color: $colorTexto;
     font-weight: bold;
-    font-size: $titulo;
-    margin-bottom: 80px;
+    font-size: 42px;
+    margin-bottom: 40px;
+    }
+    &__subtitulo{
+      color: $colorTexto;
+      font-weight: bold;
+      font-size: 22px;
     }
 }
 
 
-.proceso{
-    margin-top: 150px;
-    padding-bottom: 100px;
-    &__titulo {
-    font-size: $titulo;
-    font-family: 'poppins' sans-serif;
-    color: $colorblanco;
-    }
-    &__parrafo{
-        font-size:18px;
-        letter-spacing: 1px;
-        -webkit-animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-                animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-    }
-    
-}
-
-
-
-
-@-webkit-keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-
-
-  @keyframes text-focus-in {
-    0% {
-      -webkit-filter: blur(12px);
-              filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-filter: blur(0px);
-              filter: blur(0px);
-      opacity: 1;
-    }
-  }
-
-
-
-  .galeria {
-    display: flex;
-    flex-direction: column;
-    &__row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+.galeria {
+  display: flex;
+  flex-direction: column;
+  &__row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   }
     
 }
-
-
 
 
 .card {
   position: relative;
-  display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-}
-
-.card-body {
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  min-height: 1px;
+  &-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+  }
 }
 
 .galeria__card {
@@ -101,6 +102,14 @@
 
 
 
+
+
+
+@media only screen and (max-width: 425px) {
+  .home-mast {
+      display: none;
+  }
+}
 
 @media only screen and (max-width: 768px) {
 .galeria__row {

@@ -1,42 +1,153 @@
-@import "./variables";
+@import url("./_variables.scss");
+
+body{
+    background-color: $colorFondo;
+  }
 
 
-.contacto{
-    background-image: url("../Imagenes/kisspng-blue-wind-wave-waves-waves-5a7ceab8d6ff02.9262136615181359928806.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    padding-top: 80px;
+
+
+
+
+
+.heroCon{
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  background-image: 
+	linear-gradient(to right bottom, 
+   rgba(245, 245, 245, 0.6),
+   rgba(59, 65, 60, 0.6)),
+   url("../Imagenes/Oficina\ 2_.png");
+  	
+	background-size: cover;
+  background-position: top;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+
+.text-box {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+.heading {
+  	color: #fff;
+  	backface-visibility: hidden;
+  	margin-bottom: 30px;
+    &__primary {
+      margin-bottom: 20px;
+        display: block;
+        font-size: 42px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+    }
+    &__secondary {
+      display: block;
+      font-size: 22px;
+      font-weight: lighter;
+      letter-spacing: 0.5;
+  }
+}
+
+
+
+/**CONTACTAME**/
+
+  
+.contact{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 20px;
     padding-bottom: 80px;
-    font-family: 'poppins', sans-serif;
-    background-color: #1B5773;
-    &__titulo{
-        font-size: 60px;
-        font-weight:bold;
-        color: $colorblanco;
-    }
-    &__subtitulo{
-        font-size: 30px;
-        font-weight: 400;
-        color: $colorNegro;
-    }
-    &__parrafo{
-        font-size: 18px;
-        font-weight: lighter;
-        color: $colorNegro;
-    }
-}
-
-a {
-    color:$colorblanco;
-    text-decoration: none;
 }
 
 
+.contact .info {
+    width: 100%;
+  }
+  
+  .contact .info i {
+    font-size: 20px;
+    color: #3b413c;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #eef7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: $colorTexto;
+  }
+  
+  .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: $colorTexto;
+  }
+  
+  .contact .info .email, .contact .info .phone {
+    margin-top: 40px;
+  }
+  
+  .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+    background: #3b413c;
+    color: #fff;
+  }
+  
+  
+  .contact button[type="submit"] {
+    background: #3b413c;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+  .contact button[type="submit"]:hover {
+    background: #fff;
+    color: #3b413c;
+    border: solid #3b413c 1px;
+  }
+  
 
-@media (max-width: 768px) {
-    .form{
-        padding-top: 40px;
+
+
+
+
+  @media (max-width: 375px){
+    .heroCon{
+      height: 70vh;
+      background-image: none;
+      background-color: $colorFondo;
     }
-   
-}
-
+    .heading__primary {
+      margin-top: 20px;
+        display: block;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        color: $colorTexto;
+    }
+    .heading__secondary {
+      display: block;
+      font-size: 22px;
+      font-weight: lighter;
+      letter-spacing: 0.5;
+      color: $colorTexto;
+  }
+  }

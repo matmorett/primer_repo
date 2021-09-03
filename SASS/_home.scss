@@ -1,63 +1,192 @@
-@import "./variables";
+@import url("./_variables.scss");
 
-.main{
-    background-image: url("../Imagenes/surfing-926822_1920.jpg");
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    height: 100vh;
-    &__flex{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 180px;
-    }
-    &__titulo {
-        font-family: 'poppins', sans-serif;
-        font-weight: bold;
-        font-size: $titulo;
-        letter-spacing: 2px;
-        color:$colorNegro;
-        animation-duration: 6s;
-        animation-name: aparecer2;
-    }
-    &__subtitulo {
-        font-family: 'poppins',sans-serif;
-        text-align: center;
-        font-weight: normal;
-        font-size: $titulo/2;
-        color: $colorblanco;
-        animation-duration: 8s;
-        animation-name: aparecer2;
-    }
-
-}
-
-
-    
-    
-@keyframes aparecer2 {
-        0% {
-            opacity: 0;
-        }
-        
-        50% {
-            opacity: 0,5;
-        }
-        100% {
-            opacity: 1;
-        }
-}
   
+/**PARALLAX**/
 
 
-@media (max-width: 576px) {
-    .main__titulo {
-      font-size: 28px;
-    }
-    .main__subtitulo {
-        font-size: 16px;
-    }
-   
+#parallax-world-of-ugg .parallax-one {
+  padding-top: 200px; 
+  padding-bottom: 200px; 
+  overflow: hidden; 
+  position: relative; 
+  width: 100%; 
+  background-image: url("../Imagenes/pexels-matt-hardy-1533720.jpg"); 
+  background-attachment: fixed; 
+  background-size: cover; 
+  -moz-background-size: cover; 
+  -webkit-background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: top center;
 }
+
+#parallax-world-of-ugg h1 {
+  font-family:'Montserrat', sans-serif; 
+  font-size:70px;
+  text-align:center; 
+  color:black;
+  font-weight:bold; 
+  z-index:10; 
+  opacity:9;
+}
+
+
+#parallax-world-of-ugg h2 {
+  font-family:'Montserrat', sans-serif;
+  margin-top: 20px;
+  font-size:24px; 
+  text-align:center;
+  line-height:0; 
+  font-weight:lighter; 
+  letter-spacing:6px; 
+  color:white;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .parallax-one{
+    padding-top:100px;
+    padding-bottom:100px;
+  }
+  #parallax-world-of-ugg h1 {
+    font-size:36px;
+  }
+  #parallax-world-of-ugg .parallax-one h2{
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+}
+
+
+
+
+
+
+/**HERO**/
+
+
+.hero {
+  background-color:#3b413c;
+  font-family: 'Montserrat', sans-serif;
+  &__titulo{
+    color: $colorTexto;
+  }
+  &__parrafo{
+    color: $colorTexto;
+  }
+}
+
+
+
+
+
+
+
+
+/**TESTIMONIOS**/
+
+.testimonios{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.testimonios__titulo{
+  font-family: 'Montserrat', sans-serif;
+    color: $colorTexto;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+figure.figura {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    color: #333;
+    text-align: left;
+    box-shadow: none !important;
+  }
+  figure.figura * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  figure.figura img {
+    max-width: 100%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+  }
+  figure.figura blockquote {
+    margin: 0;
+    display: block;
+    border-radius: 8px;
+    position: relative;
+    background-color: #fafafa;
+    padding: 30px 50px 65px 50px;
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 0 0 -50px;
+    line-height: 1.6em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  }
+  figure.figura blockquote:before,
+  figure.figura blockquote:after {
+    font-family: 'Montserrat', sans-serif;
+    content: "\201C";
+    position: absolute;
+    font-size: 50px;
+    opacity: 0.3;
+    font-style: lighter;
+  }
+  figure.figura blockquote:before {
+    top: 35px;
+    left: 20px;
+  }
+  figure.figura blockquote:after {
+    content: "\201D";
+    right: 20px;
+    bottom: 35px;
+  }
+  figure.figura .autor {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    color: $colorTexto;
+  }
+  figure.figura .autor h5 {
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.8;
+    margin: 0;
+    font-weight: bold;
+  }
+  figure.figura .autor h5 span {
+    font-weight: 400;
+    text-transform: none;
+    display: block;
+  }
+
+
+
+
+/**VIDEOS**/
+
+.videos {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  &__titulo{
+    font-size: 32px;
+    color: $colorTexto;
+    font-weight: bold;
+  }
+}
+
 

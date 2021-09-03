@@ -1,34 +1,42 @@
-@import "./variables";
+@import url("./_variables.scss");
 
-
+body{
+  background-color: $colorFondo;
+}
 
 .historia{
-    background-color: #1B5773;
     padding-top: 80px;
+    padding-bottom: 80px;
     &__titulo{
-      color: $colorblanco;
+      color: $colorTexto;
+      font-family: 'Montserrat', sans-serif;
         font-weight: bold;
-        font-size: $titulo;
-        font-family: 'poppins', sans-serif;
+        font-size: 42px;
       }
     &__parrafo{
         font-size: 16px;
-        letter-spacing: 1px;
-        text-align: left;
-        color: $colorblanco;
+        letter-spacing: 0.5px;
+        color: $colorTexto;
+    }
+    &__pieFoto{
+      font-size: 14px;
+      letter-spacing: 0.5px;
+      color: $colorTexto;
+    }
+    &__img{
+      background-size:cover;
+      background-repeat: no-repeat;
+      margin-bottom:60px;
     }
   }
 
-.videos {
-  background-color: #1B5773;
-  padding-bottom: 80px;
-  &__titulo{
-    font-weight: 400;
-    padding-bottom: 40px;
+
+
+  @media (max-width: 768px){
+    .elaboracion{
+      justify-content: center;
+    }
   }
-}
-
-
 
   
  
